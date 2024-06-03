@@ -1,0 +1,103 @@
+.Resume{
+  display: flex;
+  margin-top: 50px;
+  padding: 30px 30px;
+
+  flex-wrap: wrap;
+  height: 100%;
+  border-bottom: 1px solid grey;
+ }
+ .ResumeLeft{
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ animation-name: hi;
+ animation-duration: 3s;
+ gap: 10px;
+
+ }
+ .ResumeRight{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.ResumeRight img{
+  width: 400px;
+  height: 400px;
+
+}
+@keyframes hi {
+  0%{
+   transform: translateY(-50%);
+  }}
+  .view{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .view button{
+    background-color: var(--yellow);
+    color: white;
+    border: 1px solid  var(--yellow);
+    padding: 5px 0px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .view button:hover{
+    background-color: rgb(243, 172, 31);
+  }
+  .myResume{
+    
+    display: flex;
+  justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+   position: relative;
+  }
+  .myResume img{
+    width: 550px;
+  }
+  .myResume button{
+    background-color: var(--yellow);
+    color: white;
+    border: 1px solid  var(--yellow);
+  width: 35px;
+  height: 35px;
+  line-height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+   position: absolute;
+   top: -10px;
+   right: -10px;
+   font-size: 17px;
+  }
+  @media screen and (max-width:670px) {
+    .ResumeRight img{
+      width: 300px;
+      height: 300px;
+    
+    }
+    .ResumeLeft{
+      font-size: 12px;
+    }
+    .myResume img{
+      width: 350px;
+    }
+  }
+  @media screen and (max-width:522px) {
+    .Resume{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  @media screen and (max-width:360px) {
+    .myResume img{
+      width: 300px;
+    }
+  }

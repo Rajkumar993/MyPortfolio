@@ -1,0 +1,113 @@
+.headerNav{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding: 20px 30px;
+  border-bottom: 1px solid grey;
+  position: sticky;
+  top: 0px; 
+  background-color: black;
+  opacity: 0.8;
+  z-index: 99;
+}
+
+.right{
+  flex: 1;
+  display: flex;
+
+}
+.left{
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+.right ul{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+.right ul li{
+  position: relative;
+  transition: all 0.3s ease;
+
+}
+.hami-icon .hami{
+ position: absolute;
+ right: 25px;
+ top: 25px;
+font-size: 30px; 
+cursor: pointer;
+
+}
+.hami-icon{
+  display: none;
+}
+.right ul li:hover{
+ cursor: pointer;
+}
+.right ul li::before{
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: var(--yellow);
+  position: absolute;
+  bottom: 0;
+  transform: scale(0);
+  transform-origin: center;
+ transition: all 0.3s ease;
+}
+.right ul li:hover::before{
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: var(--yellow);
+  position: absolute;
+  bottom: 0;
+  transform: scale(1);
+}
+.right ul a{
+  text-decoration: none;
+  color: white;
+}
+.showItems{
+  position: sticky;
+  top: 76px;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 88;
+}
+.showItems ul{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.showItems ul li{
+  cursor: pointer;
+  border-bottom: 1px solid var(--yellow);
+  width: 100%;
+  padding: 10px 0px;
+}
+@media screen and (max-width:1000px) {
+  .right ul li{
+    font-size: 15px;
+  }
+  .right ul{
+    gap: 10px;
+  }
+
+}
+@media screen and (max-width:555px){
+  .right ul{
+    display: none;
+  }
+  .hami-icon{
+    display: block;
+  }
+}
