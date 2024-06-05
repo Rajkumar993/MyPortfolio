@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import Resume1 from '../Assests/media/Resume.png'
+import Resume1 from '../Assests/media/Resume.jpg'
 import Resumejpg from '../Assests/resume.jpg'
+import ResumePDF from '../Assests/media/Rajkumar Resume.pdf'
 import './Resume.css'
 export const Resume = ({ScrollTores}) => {
   const[open,setOpen]=useState(false)
@@ -27,6 +28,7 @@ export const Resume = ({ScrollTores}) => {
         <div className="view">
           <p>You Can View My Resume</p>
           <button onClick={showResume} >Open</button>
+       <button><a href={ResumePDF} download={'Resume.pdf'}>Download</a></button>   
         </div>
        </div>
        <div className="ResumeRight">
