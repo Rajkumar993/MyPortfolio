@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+/* eslint-disable react/prop-types */
+import  { useState } from 'react'
 import Resume1 from '../Assests/media/Resume.jpg'
 import Resumejpg from '../Assests/resume.jpg'
 import ResumePDF from '../Assests/media/Rajkumar Resume.pdf'
