@@ -7,7 +7,7 @@ export const Home = ({ScrollTohom}) => {
        <div className="homeLeft">
         <p>Hello !</p>
         <h1>I'm <span style={{color:'var(--yellow'}}>Rajkumar</span></h1>
-        <p>A freelance Frontend Developer</p>
+        <p>React JS Developer</p>
        </div>
        <div className="homeRight">
         <img src={HeroPng} alt="" />
